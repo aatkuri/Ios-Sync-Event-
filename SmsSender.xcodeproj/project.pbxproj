@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BABA75492089758C00F3B833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA75482089758C00F3B833 /* AppDelegate.swift */; };
+		BABA754B2089758C00F3B833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA754A2089758C00F3B833 /* ViewController.swift */; };
+		BABA754E2089758C00F3B833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABA754C2089758C00F3B833 /* Main.storyboard */; };
+		BABA75512089758C00F3B833 /* SmsSender.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BABA754F2089758C00F3B833 /* SmsSender.xcdatamodeld */; };
+		BABA75532089758C00F3B833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA75522089758C00F3B833 /* Assets.xcassets */; };
+		BABA75562089758C00F3B833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABA75542089758C00F3B833 /* LaunchScreen.storyboard */; };
+		BABA75792089834200F3B833 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA75782089834200F3B833 /* CallDirectoryHandler.swift */; };
+		BABA757D2089834200F3B833 /* call.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BABA75762089834200F3B833 /* call.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BABA757B2089834200F3B833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BABA753D2089758C00F3B833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BABA75752089834200F3B833;
+			remoteInfo = call;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BABA75812089834300F3B833 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BABA757D2089834200F3B833 /* call.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BABA75452089758C00F3B833 /* SmsSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmsSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA75482089758C00F3B833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BABA754A2089758C00F3B833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BABA754D2089758C00F3B833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BABA75502089758C00F3B833 /* SmsSender.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmsSender.xcdatamodel; sourceTree = "<group>"; };
+		BABA75522089758C00F3B833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BABA75552089758C00F3B833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BABA75572089758C00F3B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABA75612089807900F3B833 /* CallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA75762089834200F3B833 /* call.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = call.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABA75782089834200F3B833 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		BABA757A2089834200F3B833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BABA75422089758C00F3B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA755E2089807900F3B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA75732089834200F3B833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BABA753C2089758C00F3B833 = {
+			isa = PBXGroup;
+			children = (
+				BABA75472089758C00F3B833 /* SmsSender */,
+				BABA75772089834200F3B833 /* call */,
+				BABA75462089758C00F3B833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BABA75462089758C00F3B833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BABA75452089758C00F3B833 /* SmsSender.app */,
+				BABA75612089807900F3B833 /* CallDirectory.appex */,
+				BABA75762089834200F3B833 /* call.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BABA75472089758C00F3B833 /* SmsSender */ = {
+			isa = PBXGroup;
+			children = (
+				BABA75482089758C00F3B833 /* AppDelegate.swift */,
+				BABA754A2089758C00F3B833 /* ViewController.swift */,
+				BABA754C2089758C00F3B833 /* Main.storyboard */,
+				BABA75522089758C00F3B833 /* Assets.xcassets */,
+				BABA75542089758C00F3B833 /* LaunchScreen.storyboard */,
+				BABA75572089758C00F3B833 /* Info.plist */,
+				BABA754F2089758C00F3B833 /* SmsSender.xcdatamodeld */,
+			);
+			path = SmsSender;
+			sourceTree = "<group>";
+		};
+		BABA75772089834200F3B833 /* call */ = {
+			isa = PBXGroup;
+			children = (
+				BABA75782089834200F3B833 /* CallDirectoryHandler.swift */,
+				BABA757A2089834200F3B833 /* Info.plist */,
+			);
+			path = call;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BABA75442089758C00F3B833 /* SmsSender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABA755A2089758C00F3B833 /* Build configuration list for PBXNativeTarget "SmsSender" */;
+			buildPhases = (
+				BABA75412089758C00F3B833 /* Sources */,
+				BABA75422089758C00F3B833 /* Frameworks */,
+				BABA75432089758C00F3B833 /* Resources */,
+				BABA75812089834300F3B833 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BABA757C2089834200F3B833 /* PBXTargetDependency */,
+			);
+			name = SmsSender;
+			productName = SmsSender;
+			productReference = BABA75452089758C00F3B833 /* SmsSender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BABA75602089807900F3B833 /* CallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABA75692089807900F3B833 /* Build configuration list for PBXNativeTarget "CallDirectory" */;
+			buildPhases = (
+				BABA755D2089807900F3B833 /* Sources */,
+				BABA755E2089807900F3B833 /* Frameworks */,
+				BABA755F2089807900F3B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectory;
+			productName = CallDirectory;
+			productReference = BABA75612089807900F3B833 /* CallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BABA75752089834200F3B833 /* call */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BABA757E2089834300F3B833 /* Build configuration list for PBXNativeTarget "call" */;
+			buildPhases = (
+				BABA75722089834200F3B833 /* Sources */,
+				BABA75732089834200F3B833 /* Frameworks */,
+				BABA75742089834200F3B833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = call;
+			productName = call;
+			productReference = BABA75762089834200F3B833 /* call.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BABA753D2089758C00F3B833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Myorganisation;
+				TargetAttributes = {
+					BABA75442089758C00F3B833 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BABA75602089807900F3B833 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BABA75752089834200F3B833 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BABA75402089758C00F3B833 /* Build configuration list for PBXProject "SmsSender" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BABA753C2089758C00F3B833;
+			productRefGroup = BABA75462089758C00F3B833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BABA75442089758C00F3B833 /* SmsSender */,
+				BABA75602089807900F3B833 /* CallDirectory */,
+				BABA75752089834200F3B833 /* call */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BABA75432089758C00F3B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABA75562089758C00F3B833 /* LaunchScreen.storyboard in Resources */,
+				BABA75532089758C00F3B833 /* Assets.xcassets in Resources */,
+				BABA754E2089758C00F3B833 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA755F2089807900F3B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA75742089834200F3B833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BABA75412089758C00F3B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABA75512089758C00F3B833 /* SmsSender.xcdatamodeld in Sources */,
+				BABA754B2089758C00F3B833 /* ViewController.swift in Sources */,
+				BABA75492089758C00F3B833 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA755D2089807900F3B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABA75722089834200F3B833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABA75792089834200F3B833 /* CallDirectoryHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BABA757C2089834200F3B833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BABA75752089834200F3B833 /* call */;
+			targetProxy = BABA757B2089834200F3B833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BABA754C2089758C00F3B833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BABA754D2089758C00F3B833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BABA75542089758C00F3B833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BABA75552089758C00F3B833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BABA75582089758C00F3B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BABA75592089758C00F3B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BABA755B2089758C00F3B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = SmsSender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABA755C2089758C00F3B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = SmsSender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BABA756A2089807900F3B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABA756B2089807900F3B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BABA757F2089834300F3B833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = call/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender.call;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BABA75802089834300F3B833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7JDTY4D6F;
+				INFOPLIST_FILE = call/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Revanth.SmsSender.call;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BABA75402089758C00F3B833 /* Build configuration list for PBXProject "SmsSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABA75582089758C00F3B833 /* Debug */,
+				BABA75592089758C00F3B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABA755A2089758C00F3B833 /* Build configuration list for PBXNativeTarget "SmsSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABA755B2089758C00F3B833 /* Debug */,
+				BABA755C2089758C00F3B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABA75692089807900F3B833 /* Build configuration list for PBXNativeTarget "CallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABA756A2089807900F3B833 /* Debug */,
+				BABA756B2089807900F3B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BABA757E2089834300F3B833 /* Build configuration list for PBXNativeTarget "call" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BABA757F2089834300F3B833 /* Debug */,
+				BABA75802089834300F3B833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BABA754F2089758C00F3B833 /* SmsSender.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BABA75502089758C00F3B833 /* SmsSender.xcdatamodel */,
+			);
+			currentVersion = BABA75502089758C00F3B833 /* SmsSender.xcdatamodel */;
+			path = SmsSender.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BABA753D2089758C00F3B833 /* Project object */;
+}
